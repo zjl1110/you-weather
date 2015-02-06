@@ -1,0 +1,91 @@
+<html>
+<head>
+	<meta charset="gb2312" >
+	<link rel="stylesheet" type="text/css" href="../css/czl.css">
+	<link rel="stylesheet" type="text/css" href="../css/db.css">
+	<script type="text/javascript" src="../js/jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="../js/tqyb.js" charset="gb2312"></script>
+	<script type="text/javascript">
+		var today=new Date();
+		var h=today.getHours();
+		//document.write(h)
+		if(h<=17){
+			$("head").append("<link>");
+			css = $("head").children(":last");
+			css.attr({
+    			rel: "stylesheet",
+    			type: "text/css",
+    			href: "styles.css"
+			});
+		}else{
+			$("head").append("<link>");
+			css = $("head").children(":last");
+			css.attr({
+    			rel: "stylesheet",
+    			type: "text/css",
+    			href: "stylex.css"
+			});
+		}
+	</script>
+	</head>
+	<body>	
+		<div id="tqyb">
+		
+
+			<div id="xx">
+				<div id="xzsj"></div>
+				<div id="cs"></div>
+				<div id="TW"></div>
+			</div>
+
+			<div id="j">
+				<p1 id="p1"></p1><br/>
+				<div id="jswtq"></div>
+				<div id="jzgwd"></div>
+				<div id="jfx"></div>
+				<div id="jfl"></div>
+			</div>
+
+			<div id="m">
+				<p2></p2><br/>
+				<div id="mswtq"></div>
+				<div id="mzgwd"></div>
+			</div>
+
+			<div id="h">
+				<p3></p3><br/>
+				<div id="hswtq"></div>
+				<div id="hzgwd"></div>
+			</div>
+
+			<div id="gx">
+			    <div id="gxsj"></div>	
+				<p4></p4>
+			</div>
+		</div>
+		
+
+		<div id="ft">
+			<a id="left-panel-link" href="../dftq/index.html"><img src="../img/hbxj.png"/></a> 
+    		<a id="right-panel-link" href="#right"><img src="../img/hbgd.png"/></a>    
+  		</div>
+
+
+  		<!-- Right panel -->
+ 		 <div id="right" class="panel">
+			<div id="navsite"> 
+    			<ul> 
+       				 <li><a href="../gy/index.html">关于</a></li> 
+        			<li><a href="../index.html">刷新</a></li> 
+    			</ul> 
+				<p style="font-size:41px;padding: 100px 100px;">友-我<br/>友-你<br/>友-天气</p>
+    		 </div>
+			</div>
+			 <script src="../js/jquery.panelslider.js"></script>
+  			<script>
+   				
+    			$('#right-panel-link').panelslider({side: 'right'});
+    		</script>
+		
+	</body>
+</html>

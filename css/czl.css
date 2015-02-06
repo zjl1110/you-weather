@@ -1,0 +1,38 @@
+*{
+	margin:0px
+}
+
+#ft{
+	position:fixed; 
+	bottom:0;
+	height:130px; 
+	width:100%; 
+	text-align:center;
+	background:#000; 
+	z-index:9999;
+}
+
+#ft a{ 
+	width:50%; 
+	display:block; 
+	float:left;
+	text-align:center; 
+	font-size:30px;
+	color:#b0b0b0; 
+	text-decoration:none;
+	
+}
+#ft a:hover{ 
+	background:#1e1e1e;
+
+}/*µã»÷±äÉ«*/
+#ft a span{ 
+	display:block; 
+	width:50%; 
+	height:130px; 
+	margin:0 auto;
+	
+}
+
+
+

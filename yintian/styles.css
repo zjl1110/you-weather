@@ -1,0 +1,62 @@
+
+body{
+	background-image: url("../img/bj/yint1.jpg")
+} 
+#tqyb{
+	color: #fff;
+} 
+ 
+#TW{
+	position: absolute;
+	
+	left: 37%;
+}
+#xx{
+	position: absolute;
+	top:10%;
+	left: 70%;
+}
+#cs{
+	font-size: 90px;
+
+}
+#xzsj{
+	font-size:35px;
+}
+#TW{
+	position: absolute;
+	
+	left: 37%;
+}
+#j{
+	font-size: 40px;
+	position: absolute;
+	top:35%;
+	left: 10%;
+}
+
+#m{
+	font-size: 30px;
+	position: absolute;
+	top:50%;
+	left: 45%;
+}
+#h{
+	font-size: 30px;
+	position: absolute;
+	top:50%;
+	left: 70%;
+}
+
+#gx{
+	position: absolute;
+	top:70%;
+	left: 80%;
+	font-size: 14px;
+}
+
+
+
+
+
+

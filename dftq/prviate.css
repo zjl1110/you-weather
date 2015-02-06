@@ -1,0 +1,44 @@
+body{
+	background-image: url("../img/dftq1.jpg");
+	background-repeat:no-repeat;
+      background-size:cover;-moz-background-size:cover;
+      -webkit-background-size:cover;
+	font-size: 30px;
+	
+} 
+#ttt{
+	width: 350px;
+	height: 80px;
+}
+
+#iii{
+	width: 354px;
+	height: 80px;
+}
+#eee{
+	width: 200px;
+	height: 80px;
+	position: absolute;
+	top:10%;
+	left: 70%;
+}
+#ts{
+	font-size: 27px;
+}
+
+
+.weather_res_today{
+	background:#F7F0DD;
+}
+
+.weather_res_tmw{
+	background:#E3EDCD;
+}
+
+
+
+
+.common_hide {
+	display:none;
+}
+

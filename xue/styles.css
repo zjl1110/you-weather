@@ -1,0 +1,81 @@
+
+body {
+      
+      background-image:url('../img/bj/yt.jpg') ;
+      background-attachment:fixed;
+      background-repeat:no-repeat;
+      background-size:cover;-moz-background-size:cover;
+      -webkit-background-size:cover;
+      
+      
+    }
+    
+    
+    
+    
+    canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      position: fixed;
+    }
+#tqyb{
+	color: #fff;
+} 
+ 
+#TW{
+	position: absolute;
+	
+	left: 37%;
+}
+#xx{
+	position: absolute;
+	top:10%;
+	left: 70%;
+}
+#cs{
+	font-size: 90px;
+
+}
+#xzsj{
+	font-size:35px;
+}
+#TW{
+	position: absolute;
+	
+	left: 37%;
+}
+#j{
+	font-size: 40px;
+	position: absolute;
+	top:35%;
+	left: 10%;
+}
+
+#m{
+	font-size: 30px;
+	position: absolute;
+	top:50%;
+	left: 45%;
+}
+#h{
+	font-size: 30px;
+	position: absolute;
+	top:50%;
+	left: 70%;
+}
+
+#gx{
+	position: absolute;
+	top:70%;
+	left: 80%;
+	font-size: 14px;
+}
+
+
+
+
+
+

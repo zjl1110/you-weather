@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link href="prviate.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../js/jquery-2.1.3.min.js"></script>
+<script src="weather.js" language="javascript" type="text/javascript" charset="UTF-8"></script>
+</head>
+<body>
+<div class="clear_36"></div>
+<form action="#" onSubmit="return false;">
+    <dl class="weather_case">
+        
+        <dd class="weather_search_v form_val" id="weather_search">
+			<input name="city" type="text" id="ttt"  style="font-size:30px;"  />    
+        </dd>
+        <dd  class="common_front weather_conn form_sub" id="weather_sub">
+            <input name="call" type="button"  style="font-size:30px;" value="她(他)的城市" title="查询天气预报" id="iii"/>
+        </dd>
+        <dd class="weather_author" id="weather_author"></dd>
+		<input name="call" type="button"  style="font-size:40px;" value="返回" id="eee" onclick="location.href='../index.html'"/>
+    </dl>
+</form>
+
+<p id='ts'>简单的问候，体贴的关心，拉近的距离，友-我，友-你，友-天气！</p>
+<div class="weather_res_case common_hide" id="weather_res_case">
+    
+    <dl class="weather_res_item weather_res_today">
+        <div id="city"></div><div id="xzsj"></div>
+        <dd>
+            <p>今天</p>
+        </dd>
+        <dd>天气：<span id="T_weather"></span></dd>
+        <dd>气温:<span id="T_temperature"></span></dd>
+        
+    </dl>
+    <dl class="weather_res_item weather_res_tmw">
+        <dd>
+            <p>明天</p>
+        </dd>
+        <dd>天气：<span id="M_weather"></span></dd>
+        <dd>气温:<span id="M_temperature"></span></dd>
+    </dl>
+   
+    
+</div>
+
+<script type="text/javascript">
+//创建天气预报核心对象
+var weather_=new weather();
+
+//输入框的默认提示
+def_value('weather_search','请输入要查询的城市天气');
+
+//监听用户事件
+onEvent.onEvent();
+
+</script>
+</body>
+</html>
