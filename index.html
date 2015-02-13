@@ -13,9 +13,14 @@
 		<script type="text/javascript">
 			var today=new Date();//时间
 			var h=today.getHours();//当前时
-			var a=function(){$.getScript("http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js",function(){//调用远程js文件，完成以后用一个函数调用下一个远程js文件
+
+
+			var a=function(){$.getScript("http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js")//调用远程js文件
+				.done(function(){//加载成功后的处理
 				//$("#aaa").html(remote_ip_info["city"]);
-				$.getScript("http://php.weather.sina.com.cn/iframe/index/w_cl.php?code=js&day=2&city="+remote_ip_info["city"]+"&dfc=3",function(){//加载完远程js以后执行代码
+				
+				$.getScript("http://php.weather.sina.com.cn/iframe/index/w_cl.php?code=js&day=2&city="+remote_ip_info["city"]+"&dfc=3")
+					.done(function(){//加载完远程js以后执行代码
 					//alert("Load was performed.");
 		  			
 
@@ -37,14 +42,24 @@
           				else if(tianqqc=="yintian"||tianqqc=="yangchen"||tianqqc=="chachen"||tianqqc=="wu"){
           					window.location.href="yintian/index.html"
           				}
-                              else {
+                        else {
                                    window.location.href="yintian/index.html"
-                              }
-          		});
-			});	
-		}
-			a();
+                        }
+          		})
+				.fail(function(){   //加载失败以后的处理
+				window.location.href="error.html"
+			});
+				
+			})
+			.fail(function(){   //加载失败以后的处理
+				window.location.href="error.html"
+			});
 			
+		}
+
+     
+			
+			a();
 		</script>
           
 	</head>

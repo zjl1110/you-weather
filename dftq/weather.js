@@ -13,7 +13,7 @@ function echo(city){
 	$("#xzsj").html((window.SWther.add.now).substring(0, 10));
 	
 	$('#T_weather').html(window.SWther.w[city][0].s1+"~"+window.SWther.w[city][0].s2);
-	$('#T_temperature').html(window.SWther.w[city][0].t1+'℃ ~ '+window.SWther.w[city][0].t2+' ℃');
+	$('#T_temperature').html(window.SWther.w[city][0].t1+'&deg; ~ '+window.SWther.w[city][0].t2+' &deg;');
 	
 	
 	$('#M_weather').html(window.SWther.w[city][1].s1+"~"+window.SWther.w[city][1].s2);

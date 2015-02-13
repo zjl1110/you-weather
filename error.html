@@ -2,10 +2,17 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<link href="prviate.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="../js/jquery-2.1.3.min.js"></script>
-<script src="weather.js" language="javascript" type="text/javascript" charset="gb2312"></script>
-
+<link href="dftq/prviate.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+<script src="dftq/weather.js" language="javascript" type="text/javascript" charset="UTF-8"></script>
+<style type="text/css">
+#ts{
+	font-size: 24px;
+	position: absolute;
+	top:0%;
+	left: 45%;
+}
+</style>
 </head>
 <body>
 <div class="clear_36"></div>
@@ -16,17 +23,22 @@
 			<input name="city" type="text" id="ttt"  style="font-size:30px;"  />    
         </dd>
         <dd  class="common_front weather_conn form_sub" id="weather_sub">
-            <input name="call" type="button"  style="font-size:30px;" value="她(他)的城市" title="查询天气预报" id="iii"/>
+            <input name="call" type="button"  style="font-size:30px;" value="you-城市" title="查询天气预报" id="iii"/>
         </dd>
         <dd class="weather_author" id="weather_author"></dd>
-		<div id="fff">
-            <!--<input name="call" type="button"  style="font-size:40px;" value="<" id="eee" onclick="location.href='../index.html'"/>-->
-            <img name="call"src="../img/hbfh.png"  style="font-size:40px;" value="返回" id="eee" onclick="javascript:window.history.back(-1);"/>
-        </div>
+		
     </dl>
 </form>
 
-<p id='ts'>简单的问候，体贴的关心，拉近的距离，友-我，友-你，友-天气！</p>
+<p id='ts'>Are you sure you do in China?<br/><br/>
+
+      If you check your network in China is open!<br/><br/>
+
+      Your IP might be an error, I can not recognize it, it is an alien IP it?<br/>
+      I can identify the IP territory of China! >_< <br/><br/>
+	  这是一个错误页面(This is an error page, 404,)<br/><br/>
+	  Here you can not experience any interesting effects, of course, if you'll Chinese, know a few Chinese names, you can look at it in the weather, that's it!<br/><br/>
+     我找不到你的城市,你只能手动搜索了！！</p>
 <div class="weather_res_case common_hide" id="weather_res_case">
     
     <dl class="weather_res_item weather_res_today">
@@ -38,17 +50,16 @@
         <dd>气温:<span id="T_temperature"></span></dd>
         
     </dl>
-   <!-- <dl class="weather_res_item weather_res_tmw">
+    <dl class="weather_res_item weather_res_tmw">
         <dd>
             <p>明天</p>
         </dd>
         <dd>天气：<span id="M_weather"></span></dd>
         <dd>气温:<span id="M_temperature"></span></dd>
-    </dl> -->
+    </dl>
    
     
 </div>
-
 
 <script type="text/javascript">
 //创建天气预报核心对象
@@ -61,7 +72,5 @@ def_value('weather_search','请输入要查询的城市天气');
 onEvent.onEvent();
 
 </script>
-
-
 </body>
 </html>

@@ -6,12 +6,23 @@
   	background-image: url("../img/bj/yangg3.jpg");
   	font-size: 22px;
   }
- a{
- 	font-size: 60px;
- 	color: #fff;
- 	text-decoration:none;
+#fff{
+	width: 100%;
+	height: 130px;
+	 position:fixed;
+    bottom:0;
+    left:0;
+	background-color:#222;
 	
- }
+}
+
+#eee{
+width:20%;
+height: 130px;
+background-color:#000;
+  color:#fff;
+  border-style: none;
+}
 
 
 h3{
@@ -21,7 +32,7 @@ h3{
 </head>
 	<body>
 	
-		<p id="ppp">
+		<div  id="ppp">
 		<h2>关于此软件：<h2>
 		 1.这是写得第一个BlackBerry10(应该没有拼写错吧)软件,<br/>
 		 2.有很多不足的地方(因为能力有限，不爱看书，技术类书籍都太厚了),<br/>
@@ -30,10 +41,12 @@ h3{
 		 ----ayou	 <br/>----2015年2月于西溪湿地畔<br/>
 		 <h3>PS:个人测试在移动数据服务中对于城市的判断有问题,请连接WIFI再打开软件，谢谢！<br>
 		        数据由 新浪 提供！<br/>
-		     PPSS:软件功能不多,以本人习惯为主，尽请谅解！<br/>
-			 此软件只在本人Q10系统10.2.1.3062上测试过！<h3>
+		     <h3>
 					
-		</p>
-		<a href="../index.html">返回</a>
+		</div>
+		<div id="fff">
+		<!--<input name="call" type="button"  style="font-size:40px;" value="返回" id="eee" onclick="location.href='../index.html'"/></div>-->
+		<img name="call" src="../img/hbfh.png"  style="font-size:40px;" value="返回" id="eee" onclick="window.history.back(-1);"/>
+  
 	</body>
 </html>
